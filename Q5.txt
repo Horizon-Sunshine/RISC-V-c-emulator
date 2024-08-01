@@ -1,0 +1,526 @@
+Cycle 1
+Fetch instruction: lw x1 100 x10
+Decode instruction: 
+Execute instruction: 
+Memory instruction: 
+Writeback instruction: 
+
+Cycle 2
+Fetch instruction: stall
+Decode instruction: lw x1 100 x10
+Execute instruction: 
+Memory instruction: 
+Writeback instruction: 
+
+Cycle 3
+Fetch instruction: add x2 x1 x1
+Decode instruction: stall
+Execute instruction: lw x1 100 x10
+Memory instruction: 
+Writeback instruction: 
+
+Cycle 4
+Fetch instruction: lw x2 200 x2
+Decode instruction: add x2 x1 x1
+Execute instruction: stall
+Memory instruction: lw x1 100 x10
+Writeback instruction: 
+
+Cycle 5
+Fetch instruction: stall
+Decode instruction: lw x2 200 x2
+Execute instruction: add x2 x1 x1
+Memory instruction: stall
+Writeback instruction: lw x1 100 x10
+
+Cycle 6
+Fetch instruction: sw x3 100 x2
+Decode instruction: stall
+Execute instruction: lw x2 200 x2
+Memory instruction: add x2 x1 x1
+Writeback instruction: stall
+
+Cycle 7
+Fetch instruction: lw x4 300 x2
+Decode instruction: sw x3 100 x2
+Execute instruction: stall
+Memory instruction: lw x2 200 x2
+Writeback instruction: add x2 x1 x1
+
+Cycle 8
+Fetch instruction: stall
+Decode instruction: lw x4 300 x2
+Execute instruction: sw x3 100 x2
+Memory instruction: stall
+Writeback instruction: lw x2 200 x2
+
+Cycle 9
+Fetch instruction: sw x4 400 x3
+Decode instruction: stall
+Execute instruction: lw x4 300 x2
+Memory instruction: sw x3 100 x2
+Writeback instruction: stall
+
+Cycle 10
+Fetch instruction: subi x4 x4 4
+Decode instruction: sw x4 400 x3
+Execute instruction: stall
+Memory instruction: lw x4 300 x2
+Writeback instruction: sw x3 100 x2
+
+Cycle 11
+Fetch instruction: bneq x4 x0 loop
+Decode instruction: subi x4 x4 4
+Execute instruction: sw x4 400 x3
+Memory instruction: stall
+Writeback instruction: lw x4 300 x2
+
+Cycle 12
+Fetch instruction: flush
+Decode instruction: bneq x4 x0 loop
+Execute instruction: subi x4 x4 4
+Memory instruction: sw x4 400 x3
+Writeback instruction: stall
+
+Cycle 13
+Fetch instruction: lw x1 100 x10
+Decode instruction: flush
+Execute instruction: bneq x4 x0 loop
+Memory instruction: subi x4 x4 4
+Writeback instruction: sw x4 400 x3
+
+Cycle 14
+Fetch instruction: stall
+Decode instruction: lw x1 100 x10
+Execute instruction: flush
+Memory instruction: bneq x4 x0 loop
+Writeback instruction: subi x4 x4 4
+
+Cycle 15
+Fetch instruction: add x2 x1 x1
+Decode instruction: stall
+Execute instruction: lw x1 100 x10
+Memory instruction: flush
+Writeback instruction: bneq x4 x0 loop
+
+Cycle 16
+Fetch instruction: lw x2 200 x2
+Decode instruction: add x2 x1 x1
+Execute instruction: stall
+Memory instruction: lw x1 100 x10
+Writeback instruction: flush
+
+Cycle 17
+Fetch instruction: stall
+Decode instruction: lw x2 200 x2
+Execute instruction: add x2 x1 x1
+Memory instruction: stall
+Writeback instruction: lw x1 100 x10
+
+Cycle 18
+Fetch instruction: sw x3 100 x2
+Decode instruction: stall
+Execute instruction: lw x2 200 x2
+Memory instruction: add x2 x1 x1
+Writeback instruction: stall
+
+Cycle 19
+Fetch instruction: lw x4 300 x2
+Decode instruction: sw x3 100 x2
+Execute instruction: stall
+Memory instruction: lw x2 200 x2
+Writeback instruction: add x2 x1 x1
+
+Cycle 20
+Fetch instruction: stall
+Decode instruction: lw x4 300 x2
+Execute instruction: sw x3 100 x2
+Memory instruction: stall
+Writeback instruction: lw x2 200 x2
+
+Cycle 21
+Fetch instruction: sw x4 400 x3
+Decode instruction: stall
+Execute instruction: lw x4 300 x2
+Memory instruction: sw x3 100 x2
+Writeback instruction: stall
+
+Cycle 22
+Fetch instruction: subi x4 x4 4
+Decode instruction: sw x4 400 x3
+Execute instruction: stall
+Memory instruction: lw x4 300 x2
+Writeback instruction: sw x3 100 x2
+
+Cycle 23
+Fetch instruction: bneq x4 x0 loop
+Decode instruction: subi x4 x4 4
+Execute instruction: sw x4 400 x3
+Memory instruction: stall
+Writeback instruction: lw x4 300 x2
+
+Cycle 24
+Fetch instruction: flush
+Decode instruction: bneq x4 x0 loop
+Execute instruction: subi x4 x4 4
+Memory instruction: sw x4 400 x3
+Writeback instruction: stall
+
+Cycle 25
+Fetch instruction: lw x1 100 x10
+Decode instruction: flush
+Execute instruction: bneq x4 x0 loop
+Memory instruction: subi x4 x4 4
+Writeback instruction: sw x4 400 x3
+
+Cycle 26
+Fetch instruction: stall
+Decode instruction: lw x1 100 x10
+Execute instruction: flush
+Memory instruction: bneq x4 x0 loop
+Writeback instruction: subi x4 x4 4
+
+Cycle 27
+Fetch instruction: add x2 x1 x1
+Decode instruction: stall
+Execute instruction: lw x1 100 x10
+Memory instruction: flush
+Writeback instruction: bneq x4 x0 loop
+
+Cycle 28
+Fetch instruction: lw x2 200 x2
+Decode instruction: add x2 x1 x1
+Execute instruction: stall
+Memory instruction: lw x1 100 x10
+Writeback instruction: flush
+
+Cycle 29
+Fetch instruction: stall
+Decode instruction: lw x2 200 x2
+Execute instruction: add x2 x1 x1
+Memory instruction: stall
+Writeback instruction: lw x1 100 x10
+
+Cycle 30
+Fetch instruction: sw x3 100 x2
+Decode instruction: stall
+Execute instruction: lw x2 200 x2
+Memory instruction: add x2 x1 x1
+Writeback instruction: stall
+
+Cycle 31
+Fetch instruction: lw x4 300 x2
+Decode instruction: sw x3 100 x2
+Execute instruction: stall
+Memory instruction: lw x2 200 x2
+Writeback instruction: add x2 x1 x1
+
+Cycle 32
+Fetch instruction: stall
+Decode instruction: lw x4 300 x2
+Execute instruction: sw x3 100 x2
+Memory instruction: stall
+Writeback instruction: lw x2 200 x2
+
+Cycle 33
+Fetch instruction: sw x4 400 x3
+Decode instruction: stall
+Execute instruction: lw x4 300 x2
+Memory instruction: sw x3 100 x2
+Writeback instruction: stall
+
+Cycle 34
+Fetch instruction: subi x4 x4 4
+Decode instruction: sw x4 400 x3
+Execute instruction: stall
+Memory instruction: lw x4 300 x2
+Writeback instruction: sw x3 100 x2
+
+Cycle 35
+Fetch instruction: bneq x4 x0 loop
+Decode instruction: subi x4 x4 4
+Execute instruction: sw x4 400 x3
+Memory instruction: stall
+Writeback instruction: lw x4 300 x2
+
+Cycle 36
+Fetch instruction: flush
+Decode instruction: bneq x4 x0 loop
+Execute instruction: subi x4 x4 4
+Memory instruction: sw x4 400 x3
+Writeback instruction: stall
+
+Cycle 37
+Fetch instruction: lw x1 100 x10
+Decode instruction: flush
+Execute instruction: bneq x4 x0 loop
+Memory instruction: subi x4 x4 4
+Writeback instruction: sw x4 400 x3
+
+Cycle 38
+Fetch instruction: stall
+Decode instruction: lw x1 100 x10
+Execute instruction: flush
+Memory instruction: bneq x4 x0 loop
+Writeback instruction: subi x4 x4 4
+
+Cycle 39
+Fetch instruction: add x2 x1 x1
+Decode instruction: stall
+Execute instruction: lw x1 100 x10
+Memory instruction: flush
+Writeback instruction: bneq x4 x0 loop
+
+Cycle 40
+Fetch instruction: lw x2 200 x2
+Decode instruction: add x2 x1 x1
+Execute instruction: stall
+Memory instruction: lw x1 100 x10
+Writeback instruction: flush
+
+Cycle 41
+Fetch instruction: stall
+Decode instruction: lw x2 200 x2
+Execute instruction: add x2 x1 x1
+Memory instruction: stall
+Writeback instruction: lw x1 100 x10
+
+Cycle 42
+Fetch instruction: sw x3 100 x2
+Decode instruction: stall
+Execute instruction: lw x2 200 x2
+Memory instruction: add x2 x1 x1
+Writeback instruction: stall
+
+Cycle 43
+Fetch instruction: lw x4 300 x2
+Decode instruction: sw x3 100 x2
+Execute instruction: stall
+Memory instruction: lw x2 200 x2
+Writeback instruction: add x2 x1 x1
+
+Cycle 44
+Fetch instruction: stall
+Decode instruction: lw x4 300 x2
+Execute instruction: sw x3 100 x2
+Memory instruction: stall
+Writeback instruction: lw x2 200 x2
+
+Cycle 45
+Fetch instruction: sw x4 400 x3
+Decode instruction: stall
+Execute instruction: lw x4 300 x2
+Memory instruction: sw x3 100 x2
+Writeback instruction: stall
+
+Cycle 46
+Fetch instruction: subi x4 x4 4
+Decode instruction: sw x4 400 x3
+Execute instruction: stall
+Memory instruction: lw x4 300 x2
+Writeback instruction: sw x3 100 x2
+
+Cycle 47
+Fetch instruction: bneq x4 x0 loop
+Decode instruction: subi x4 x4 4
+Execute instruction: sw x4 400 x3
+Memory instruction: stall
+Writeback instruction: lw x4 300 x2
+
+Cycle 48
+Fetch instruction: flush
+Decode instruction: bneq x4 x0 loop
+Execute instruction: subi x4 x4 4
+Memory instruction: sw x4 400 x3
+Writeback instruction: stall
+
+Cycle 49
+Fetch instruction: lw x1 100 x10
+Decode instruction: flush
+Execute instruction: bneq x4 x0 loop
+Memory instruction: subi x4 x4 4
+Writeback instruction: sw x4 400 x3
+
+Cycle 50
+Fetch instruction: stall
+Decode instruction: lw x1 100 x10
+Execute instruction: flush
+Memory instruction: bneq x4 x0 loop
+Writeback instruction: subi x4 x4 4
+
+Cycle 51
+Fetch instruction: add x2 x1 x1
+Decode instruction: stall
+Execute instruction: lw x1 100 x10
+Memory instruction: flush
+Writeback instruction: bneq x4 x0 loop
+
+Cycle 52
+Fetch instruction: lw x2 200 x2
+Decode instruction: add x2 x1 x1
+Execute instruction: stall
+Memory instruction: lw x1 100 x10
+Writeback instruction: flush
+
+Cycle 53
+Fetch instruction: stall
+Decode instruction: lw x2 200 x2
+Execute instruction: add x2 x1 x1
+Memory instruction: stall
+Writeback instruction: lw x1 100 x10
+
+Cycle 54
+Fetch instruction: sw x3 100 x2
+Decode instruction: stall
+Execute instruction: lw x2 200 x2
+Memory instruction: add x2 x1 x1
+Writeback instruction: stall
+
+Cycle 55
+Fetch instruction: lw x4 300 x2
+Decode instruction: sw x3 100 x2
+Execute instruction: stall
+Memory instruction: lw x2 200 x2
+Writeback instruction: add x2 x1 x1
+
+Cycle 56
+Fetch instruction: stall
+Decode instruction: lw x4 300 x2
+Execute instruction: sw x3 100 x2
+Memory instruction: stall
+Writeback instruction: lw x2 200 x2
+
+Cycle 57
+Fetch instruction: sw x4 400 x3
+Decode instruction: stall
+Execute instruction: lw x4 300 x2
+Memory instruction: sw x3 100 x2
+Writeback instruction: stall
+
+Cycle 58
+Fetch instruction: subi x4 x4 4
+Decode instruction: sw x4 400 x3
+Execute instruction: stall
+Memory instruction: lw x4 300 x2
+Writeback instruction: sw x3 100 x2
+
+Cycle 59
+Fetch instruction: bneq x4 x0 loop
+Decode instruction: subi x4 x4 4
+Execute instruction: sw x4 400 x3
+Memory instruction: stall
+Writeback instruction: lw x4 300 x2
+
+Cycle 60
+Fetch instruction: flush
+Decode instruction: bneq x4 x0 loop
+Execute instruction: subi x4 x4 4
+Memory instruction: sw x4 400 x3
+Writeback instruction: stall
+
+Cycle 61
+Fetch instruction: lw x1 100 x10
+Decode instruction: flush
+Execute instruction: bneq x4 x0 loop
+Memory instruction: subi x4 x4 4
+Writeback instruction: sw x4 400 x3
+
+Cycle 62
+Fetch instruction: stall
+Decode instruction: lw x1 100 x10
+Execute instruction: flush
+Memory instruction: bneq x4 x0 loop
+Writeback instruction: subi x4 x4 4
+
+Cycle 63
+Fetch instruction: add x2 x1 x1
+Decode instruction: stall
+Execute instruction: lw x1 100 x10
+Memory instruction: flush
+Writeback instruction: bneq x4 x0 loop
+
+Cycle 64
+Fetch instruction: lw x2 200 x2
+Decode instruction: add x2 x1 x1
+Execute instruction: stall
+Memory instruction: lw x1 100 x10
+Writeback instruction: flush
+
+Cycle 65
+Fetch instruction: stall
+Decode instruction: lw x2 200 x2
+Execute instruction: add x2 x1 x1
+Memory instruction: stall
+Writeback instruction: lw x1 100 x10
+
+Cycle 66
+Fetch instruction: sw x3 100 x2
+Decode instruction: stall
+Execute instruction: lw x2 200 x2
+Memory instruction: add x2 x1 x1
+Writeback instruction: stall
+
+Cycle 67
+Fetch instruction: lw x4 300 x2
+Decode instruction: sw x3 100 x2
+Execute instruction: stall
+Memory instruction: lw x2 200 x2
+Writeback instruction: add x2 x1 x1
+
+Cycle 68
+Fetch instruction: stall
+Decode instruction: lw x4 300 x2
+Execute instruction: sw x3 100 x2
+Memory instruction: stall
+Writeback instruction: lw x2 200 x2
+
+Cycle 69
+Fetch instruction: sw x4 400 x3
+Decode instruction: stall
+Execute instruction: lw x4 300 x2
+Memory instruction: sw x3 100 x2
+Writeback instruction: stall
+
+Cycle 70
+Fetch instruction: subi x4 x4 4
+Decode instruction: sw x4 400 x3
+Execute instruction: stall
+Memory instruction: lw x4 300 x2
+Writeback instruction: sw x3 100 x2
+
+Cycle 71
+Fetch instruction: bneq x4 x0 loop
+Decode instruction: subi x4 x4 4
+Execute instruction: sw x4 400 x3
+Memory instruction: stall
+Writeback instruction: lw x4 300 x2
+
+Cycle 72
+Fetch instruction: flush
+Decode instruction: bneq x4 x0 loop
+Execute instruction: subi x4 x4 4
+Memory instruction: sw x4 400 x3
+Writeback instruction: stall
+
+Cycle 73
+Fetch instruction: lw x1 100 x10
+Decode instruction: flush
+Execute instruction: bneq x4 x0 loop
+Memory instruction: subi x4 x4 4
+Writeback instruction: sw x4 400 x3
+
+Cycle 74
+Fetch instruction: stall
+Decode instruction: lw x1 100 x10
+Execute instruction: flush
+Memory instruction: bneq x4 x0 loop
+Writeback instruction: subi x4 x4 4
+
+Cycle 75
+Fetch instruction: add x2 x1 x1
+Decode instruction: stall
+Execute instruction: lw x1 100 x10
+Memory instruction: flush
+Writeback instruction: bneq x4 x0 loop
+
+CPI: 1
